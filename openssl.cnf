@@ -1,7 +1,7 @@
 [ ca ]
 default_ca	= CA_default
 [ CA_default ]
-default_md	= sha256
+default_md	= rsa
 [ v3_ca ]
 subjectKeyIdentifier=hash
 authorityKeyIdentifier=keyid:always,issuer
@@ -15,13 +15,13 @@ countryName_min			= 2
 countryName_max			= 2
 
 stateOrProvinceName		= State or Province Name (full name)
-stateOrProvinceName_default	= zhejiang
+stateOrProvinceName_default	= Zhejiang
 
 localityName			= Locality Name (eg, city)
-localityName_default		= hangzhou
+localityName_default		= Hangzhou
 
 0.organizationName		= Organization Name (eg, company)
-0.organizationName_default	= milkfr
+0.organizationName_default	= Alipay.com Co.,Ltd
 
 # we can do this but it is not needed normally :-)
 #1.organizationName		= Second Organization Name (eg, company)
@@ -31,9 +31,9 @@ organizationalUnitName		= Organizational Unit Name (eg, section)
 organizationalUnitName_default	= milkfr
 
 commonName			= Common Name (e.g. server FQDN or YOUR name)
-commonName_default		= milkfr.github.io
+commonName_default		= alipay.com
 commonName_max			= 64
 
 emailAddress			= Email Address
-emailAddress_default		= 291509722@qq.com
+emailAddress_default		= init@alipay.com
 emailAddress_max		= 64
